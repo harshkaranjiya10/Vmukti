@@ -15,14 +15,17 @@
     React Hooks: is a function which allows us to use state. React Hooks provides side effects, manage state without writing a class components.
     
     useState:
-        useState hook manage state. useState hook returns a array of two element. first is state value and second element is function. State-value is used in within that function. And using set-function we change the value of the state.
+        useState hook manage state. useState hook returns a array of two element. first is state value and second element is function.
+            State-value is used in within that function. And using set-function we change the value of the state.
         Example: const [count, setCount] = useState(0)
         const handelButton() {
             setCount(prevCount => prevCount+1);
         }
 
     useEffect:
-        useEffect function handles side effect of the app components    . useEffect hook accept two parameter, callback function and dependencies (optional). 
+        useEffect function handles side effect of the app components.
+         useEffect hook accept two parameter, callback function and dependencies (optional). 
+        
         Example: Fetching data from backend or update a state when the dependencies get change.
         useEffect( () => {
             const res = axios.get("https:localhost:5000/products");
@@ -52,13 +55,16 @@ Structure:
     NoSQL Databases: Non-relational, where data is stored in formats like key-value pairs, documents, wide-columns, or graphs.
 
 Query Language:
-    SQL Databases: Use Structured Query Language (SQL) to define, manipulate, and query data. Example: SELECT * FROM users WHERE id = 1;
-    NoSQL Databases: Use JSON-based or similar query languages tailored to the database type. Example in MongoDB: { "name": "John" }.
+    SQL Databases: Use Structured Query Language (SQL) to define, manipulate, and query data.
+                  Example: SELECT * FROM users WHERE id = 1;
+    NoSQL Databases: Use JSON-based or similar query languages tailored to the database type.
+                  Example in MongoDB: { "name": "John" }.
      
 example of when to use NoSQL over SQL:
     When we wanted to create a real time updates and store more data or retrive more data from database. Then use NOSQL.
     
-    Example: E-commerce app where A user shop products in real time. An app provides recommended products or search for relevant products.
+    Example: E-commerce app where A user shop products in real time.
+              An app provides recommended products or search for relevant products.
         -NoSQL databases like MongoDB can store and quickly fetch large amounts of user
         -NoSQL allows you to store all kinds of product data without needing a fixed table structure. 
 ```
