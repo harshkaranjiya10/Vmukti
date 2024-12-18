@@ -1,4 +1,9 @@
 
+# Project Title
+
+A brief description of what this project does and who it's for
+
+
 # Vmukti Fullstack Test
 
 ## Main branch: ReadME file
@@ -96,15 +101,37 @@ o Push the new branch to a remote repository.
 #### Docker Basics (5 Marks) 
 What is Docker, and how does it benefit developers? Provide a basic Dockerfile to containerize a Node.js application. 
 ```bash 
-     
+      Docker is a platform that enables developers to create, deploy, and run applications in isolated environments called containers. 
+          Efficiency, Consistency, Isolation
+      
+      FROM node:14  
+      WORKDIR /app
+      COPY package*.json ./
+      RUN npm install
+      COPY . .
+      EXPOSE 3000
+      CMD ["npm", "dist/index.js"]
+      
 ```
 
 #### Debugging & CI/CD (10 Marks) 
 o Explain two common debugging techniques in a fullstack application. 
 ```bash 
-     
-```
+     Using Logging:
+        Most effective debugging techniques is adding logging to your application. In Node.js, 
+        developers often use console.log to output values at various stages of the app to trace data flow or identify errors.
+
+     Using Debugger:
+
+        Debugging Tools for Full Stack Development: Postman, DevTools for frontend
+
+```   
+
 o What is a CI/CD pipeline and why is it important in software development?
+
 ```bash
+  CI/Continuous Integration: Developers frequently integrate their code
   
+  CD/Continuous Develiver/Deployment: Continuous Delivery refers to automatically pushing code to a staging environment, 
+    while Continuous Deployment refers to the automatic deployment of code to production.
 ```  
