@@ -1,6 +1,10 @@
 
 # Vmukti Fullstack Test
 
+## Main branch: ReadME file
+## Master branch: Frontend, Backend
+
+
 ### Section 1: Node.js and RESTful APIs (30 Marks)
 #### Explain what middleware is in Express and provide an example of a use case.
 
